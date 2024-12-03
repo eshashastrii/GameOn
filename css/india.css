@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+   font-family: "Wix Madefor Text", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+ }
+ .container{
+    margin-left: 35px;
+    margin-right: 35px;
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    column-gap: 223px;
+    row-gap: 60px;
+    grid-auto-flow: row;
+}
+.details{
+    text-decoration: none;
+    color: white;
+}
+.heading a{
+    color: #fff;
+    text-decoration: none;
+}
+.element1{ 
+    color: white;
+    text-decoration: none;
+    min-height: 300px;
+    width: 300px;
+    padding-right: 1px; 
+    border: 0px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: rgb(0 0 0 / 54%);
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.edit{
+    color: black;
+}

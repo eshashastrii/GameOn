@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.banner{
+    width: 100%;
+    
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transform: scaleX(0);
+    transition: all 0.2s;
+}
+.navbar ul li a:focus:after,
+.navbar ul li a:hover:after{
+    transform: scaleX(1);
+}
+.logo{
+    size: 75px;
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 15px;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+.heading{
+    margin-left: 110px;
+}
+.container {
+    position: relative;
+    top: 100px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: rgb(0 0 0 / 54%);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+input, textarea{
+    width: 90%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+button{
+    width: 50%;
+    height: 45px;
+    background: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+}
+::placeholder{
+    color: #fff;
+}
